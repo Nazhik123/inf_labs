@@ -13,6 +13,8 @@ public abstract class Employee {
         count++;
     }
 
+    public Employee(){this("Костя","Капустин","0 street",0);}
+
     public void setName(String name) {
         this.name = name;
     }

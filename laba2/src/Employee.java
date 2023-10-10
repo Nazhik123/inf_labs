@@ -1,8 +1,8 @@
 public abstract class Employee {
-    protected String name;
-    protected String surname;
-    protected String address;
-    protected int id;
+    private String name;
+    private String surname;
+    private String address;
+    private int id;
     static int count;
 
     public Employee(String name, String surname, String address, int id){

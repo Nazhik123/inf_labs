@@ -21,12 +21,15 @@ public class Manager extends Employee {
     public  String getSubordinates(){return subordinates;}
 
     public String getInfo() {
-        return name+", "+surname+", "+address+", "+id+", "+vacation+", "+salary+", "+subordinates;
+        return getName()+", "+getSurname()+", "+getAddress()+", "+getId()+", "+vacation+", "+salary+", "+subordinates;
     }
     public String isSalary(){
         if (salary>=40000){
             return "big";
         } else {return "small";}
+    }
+    public int isSalary(int salary){
+        return salary*2;
     }
     public int countSubordinates(){
         String[] sub = subordinates.split(" ");

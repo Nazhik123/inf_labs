@@ -22,7 +22,7 @@ public class Programmer extends Employee {
     public String getLanguage(){return language;}
 
     public String getInfo() {
-        return name+", "+surname+", "+address+", "+id+", "+goals+", "+work_week+", "+language;
+        return getName()+", "+getSurname()+", "+getAddress()+", "+getId()+", "+goals+", "+work_week+", "+language;
     }
     public boolean isJava(){
         return language.equalsIgnoreCase("java");

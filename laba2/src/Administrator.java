@@ -38,10 +38,14 @@ public class Administrator extends Employee {
 
 
     public String getInfo() {
-        return name+", "+surname+", "+address+", "+id+", "+tasks+", "+work_time+", "+experience;
+        return getName()+", "+getSurname()+", "+getAddress()+", "+getId()+", "+tasks+", "+work_time+", "+experience;
     }
     public boolean isOverWork(){
         return work_time>8;
+    }
+    @Override
+    public String FullName(String name, String surname){
+        return  surname+" "+name;
     }
     public boolean isProfessional(String experience){
         return experience.equals("big");
